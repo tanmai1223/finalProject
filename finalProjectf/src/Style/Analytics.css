@@ -1,0 +1,158 @@
+.calendar-card {
+  border-radius: 16px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 24px;
+  margin-top: 20px;
+  width: 350px;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.calendar-card:hover {
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.calendar-label {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  display: block;
+}
+
+/* Dark background for the calendar popup */
+.react-datepicker {
+  background-color: #0f1233 !important; /* dark navy */
+  border: none !important;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  padding: 10px;
+}
+.react-datepicker__input-container input {
+  background: #0f1233;
+  color: #c0c0c0;
+  width: 80px;
+  font-size: 16px;
+}
+.react-datepicker__week-number {
+  color: #fff; /* or whatever color your month title uses */
+  font-weight: normal; /* optional */
+}
+
+/* Header with month/year */
+.react-datepicker__header {
+  background-color: #0f1233 !important;
+  border-bottom: none !important;
+  padding-top: 12px;
+  padding-bottom: 8px;
+}
+
+.react-datepicker__current-month,
+.react-datepicker-year-header {
+  color: #c0c0c0 !important;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Navigation arrows */
+.react-datepicker__navigation {
+  top: 14px !important;
+}
+
+.react-datepicker__navigation-icon::before {
+  border-color: #c0c0c0 !important;
+  border-width: 2px 2px 0 0;
+}
+
+/* Month grid */
+.react-datepicker__month-picker,
+.react-datepicker__year-picker {
+  background: #0f1233 !important;
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  padding: 12px;
+}
+
+.react-datepicker__month-text,
+.react-datepicker__year-text {
+  color: #c0c0c0 !important;
+  background: transparent !important;
+  border-radius: 8px;
+  padding: 8px 0;
+  transition: all 0.2s ease;
+}
+
+.react-datepicker__month-text:hover,
+.react-datepicker__year-text:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: #fff !important;
+  cursor: pointer;
+}
+
+/* Selected month/year */
+.react-datepicker__month-text--selected,
+.react-datepicker__year-text--selected {
+  background-color: #4cafef !important;
+  color: #fff !important;
+  font-weight: 600;
+}
+.dashboard {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 25px;
+  margin: 0px 30px;
+}
+
+.stat-card {
+  background: linear-gradient(to bottom, #060b28 0%, #0e153a 100%);
+  padding: 35px;
+  border-radius: 12px;
+  width: 250px;
+  height: 320px;
+  color: #fff;
+  text-align: center;
+}
+
+.stat-title {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.stat-circle {
+  width: 130px;
+  height: 130px;
+  margin: 0 auto 30px;
+}
+
+.stat-extra {
+  font-size: 18px;
+  color: #aaa;
+}
+
+.chart-section {
+  padding: 25px;
+  background: linear-gradient(to bottom, #060b28 0%, #0e153a 100%);
+  margin: 40px 30px;
+}
+
+@media only screen and (max-width: 480px) {
+  .dashboard {
+ 
+ padding: 0px;
+  margin: 0px 0px;
+}
+
+  .stat-card {
+    width: 310px;
+    height: 330px;
+  }
+
+  .chart-section {
+  padding: 10px;
+  margin: 20px 0px;
+}
+
+}

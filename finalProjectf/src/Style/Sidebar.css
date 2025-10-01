@@ -1,0 +1,103 @@
+/* Sidebar Container */
+.sidebar {
+  width: 280px;
+  height: 100vh;
+  color: #cfd3e0;
+  background: #060B26;
+  padding: 25px 18px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 2px 0 6px rgba(0, 0, 0, 0.25);
+  
+}
+
+
+/* Sidebar Title */
+.sidebar-title {
+  color: #ffffff;
+  font-size: 22px;
+  margin-bottom: 35px;
+  text-align: center;
+  letter-spacing: 0.8px;
+  margin-top: 25px;
+}
+hr {
+  border: none;              /* remove default border */
+  height: 1.5px;               /* thickness */
+  margin: 10px 0;            /* spacing */
+  background: linear-gradient(
+    to right,
+    transparent,
+    white 30%,
+    white 70%,
+    transparent
+  );
+}
+
+/* Menu List */
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.icon {
+  font-size: 22px;
+  color: #3b82f6; /* nice blue */
+  margin-right: 15px;
+}
+
+.menu-item a {
+  display: flex;
+  align-items: center;
+  padding: 20px 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  font-size: 20px;
+  color: #cfd3e0;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.menu-item a:hover {
+  background-color: #1a2132;
+  color: #5b9dff;
+}
+
+.menu-item a.active {
+  background-color: #1a2132;
+  color: #ffffff;
+  box-shadow: inset 2px 0 0 #1a2132;
+}
+
+
+/* Default styles for desktop/tablet */
+.container {
+  width: 80%;
+  font-size: 16px;
+}
+
+/* Styles for phones (max-width: 600px) */
+@media only screen and (max-width: 480px) {
+
+.title{
+  display: none;
+}
+.sidebar {
+  width: 100px;
+  height: 100vh;
+  color: #cfd3e0;
+  background: #060B26;
+  padding: 25px 18px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 2px 0 6px rgba(0, 0, 0, 0.25);
+  
+}
+
+}

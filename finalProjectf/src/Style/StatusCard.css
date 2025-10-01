@@ -1,0 +1,78 @@
+.status-container-wrapper {
+  position: relative; /* needed for absolute icon */
+  margin-bottom: 20px; /* spacing between containers */
+}
+
+.status-container {
+  display: flex;
+  gap: 0px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  cursor: pointer;
+  scroll-behavior: smooth;
+  padding-top: 20px; /* optional: space for the icon */
+}
+
+.status-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Position the icon at the top-right of the wrapper */
+.status-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 20px;
+}
+
+.status-circle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background-color: #00ae00; /* green */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px; /* size of the tick */
+  color: white; /* tick color */
+  border: 2px solid #fff; /* optional border */
+}
+
+.statusbar {
+  flex: 0 0 auto;
+  padding: 8px 5px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.green {
+  height: 40px;
+  width: 40px;
+  background-color: #00ae00;
+  border-radius: 18px;
+}
+
+.red {
+  height: 40px;
+  width: 40px;
+  border-bottom: 4px solid red;
+}
+
+.orange {
+  height: 40px;
+  width: 40px;
+  background-color: #eb7900;
+  border-radius: 18px;
+}
+
+.yellow {
+  height: 40px;
+  width: 40px;
+  background-color: yellow;
+  border-radius: 18px;
+}

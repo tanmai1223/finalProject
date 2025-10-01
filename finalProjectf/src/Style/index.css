@@ -1,0 +1,64 @@
+
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.app-container {
+  display: flex;
+}
+
+/* Push main content */
+.main-content {
+  margin-left: 280px; /* same as sidebar width */
+  padding: 25px;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  color: white;
+  background: linear-gradient(to right, #0f123b 0%, #090d2e 59%, #020515 100%);
+}
+
+.heading {
+  font-size: 35px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  margin-left: 10px;
+}
+
+.display {
+  margin: 20px;
+  padding: 0 10px;
+}
+
+.display-tracer {
+  margin: 10px;
+  padding: 5px 5px;
+}
+
+@media only screen and (max-width: 480px) {
+  .main-content {
+    margin-left: 100px; 
+    padding: 15px;
+  }
+
+  .display {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .display-tracer {
+    margin: 0px;
+    padding: 0px;
+  }
+  .heading {
+    margin-left: 0px;
+  }
+  .calendar-card {
+    padding: 24px 5px !important;
+    margin-top: 20px;
+  }
+}
