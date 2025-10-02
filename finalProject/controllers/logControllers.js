@@ -1,20 +1,22 @@
-import logData from "../models/logModel.js";
+import logData from "../models/logModel.js"; 
 
 export const postLogs = async (req, res) => {
   try {
-    const { traceId, method, endpoint, status, responseTimeMs, logs } =
-      req.body;
+    const { traceId, method, endpoint, status, responseTimeMs, logs } = req.body;
 
-    const finalLogs =
+    // Combine logs into one string, preserving style
+    const combinedMessage =
       logs && logs.length > 0
-        ? logs
-        : [
-            {
-              timestamp: new Date().toISOString(),
-              type: "INFO",
-              message: "No details provided",
-            },
-          ];
+        ? logs.map(log => `[${log.type}] ${log.message}`).join("\n") // keep newlines
+        : "No details provided";
+
+    const finalLogs = [
+      {
+        timestamp: new Date().toISOString(),
+        type: "INFO",
+        message: combinedMessage,
+      },
+    ];
 
     const data = new logData({
       traceId,

@@ -61,7 +61,7 @@ function logMiddleware() {
 
     try {
       // Fetch endpoint control config from DB
-      const controlRes = await fetch("https://appmanaging.onrender.com/api/logs/control");
+      const controlRes = await fetch("https://finalprojectb-igcx.onrender.com/api/logs/control");
       const controlJson = await controlRes.json();
       const controlData = controlJson?.data || [];
 
@@ -77,7 +77,7 @@ function logMiddleware() {
           limitValues: { number: null, rate: null },
           scheduleValues: { start: null, end: null },
         };
-        await fetch("https://appmanaging.onrender.com/api/logs/control", {
+        await fetch("https://finalprojectb-igcx.onrender.com/api/logs/control", {
           method: "PUT",
           headers: {
             "Content-Type": "application/json",
@@ -207,7 +207,7 @@ function logMiddleware() {
 
           try {
             const traceRes = await fetch(
-              "https://appmanaging.onrender.com/api/logs",
+              "https://finalprojectb-igcx.onrender.com/api/logs",
               {
                 method: "POST",
                 headers: {

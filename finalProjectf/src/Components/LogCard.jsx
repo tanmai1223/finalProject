@@ -1,5 +1,24 @@
 import React from "react";
 import "../Style/LogCard.css";
+import ansiRegex from "ansi-regex";
+
+const cleanMessage = (msg) => {
+  return msg
+    .replace(ansiRegex(), "") // remove ANSI colors
+    .replace(/\[LOG\]|\[INFO\]|\[DEBUG\]/g, "") // remove tags
+    .replace(/%s: %s/g, "") // remove %s placeholders
+    .split("\n") // split into lines
+    .map(line => line.trim())
+    .filter(line =>
+      line &&
+      !/^┌|^└|^├/.test(line) && // remove only border lines
+      !/^│\s*┐?$/.test(line)   // remove empty │ lines
+    )
+    .map(line => line.replace(/^│|│$/g, "").trim()) // remove starting/ending │
+    .join("\n");
+};
+
+
 
 function LogCard({ log }) {
   const formatTimestamp = (timestamp) => {
@@ -31,7 +50,8 @@ function LogCard({ log }) {
               <div key={index} className="logEntry">
                 <p className="timestamp">{formatTimestamp(item.timestamp)}</p>
                 <p className="type">{item.type}</p>
-                <p className="message">{item.message}</p>
+                <pre className="message">{cleanMessage(item.message)}</pre>
+
               </div>
             ))
           ) : (

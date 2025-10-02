@@ -91,7 +91,10 @@ function Home() {
                     ref={(el) => (containerRefs.current[baseEndpoint] = el)}
                   >
                     {logs[baseEndpoint].map((log) => (
+                      <>
+                     { console.log(log)}
                       <StatusCard key={log.traceId} log={log} />
+                      </>
                     ))}
                   </div>
                   {logs[baseEndpoint].length > 0 && (

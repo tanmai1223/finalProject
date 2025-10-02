@@ -73,3 +73,8 @@
 .responseTime {
   color: #55efc4;
 }
+
+.logEntry .message {
+  white-space: pre-wrap; /* preserves line breaks */
+  overflow-x: auto; /* horizontal scroll if too long */
+}
