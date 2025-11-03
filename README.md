@@ -21,30 +21,29 @@ The **API Tracer Management System** allows teams to:
 ### 🏠 Dashboard  
 Shows all APIs with **green (success)** and **red (failure)** indicators, and monthly activity.
 
-![Dashboard Screenshot]<img width="1898" height="878" alt="image" src="https://github.com/user-attachments/assets/b3f91c55-0e75-4492-9848-e0dc8c18dbfa" />
+[Dashboard Screenshot]<img width="1898" height="878" alt="image" src="https://github.com/user-attachments/assets/b3f91c55-0e75-4492-9848-e0dc8c18dbfa" />
 ---
 
 ### 📋 Tracer Details  
 Displays each API's **log history**, including **execution time**, **status**, and **error info**.
 
-![Tracer Details Screenshot](<img width="1898" height="875" alt="image" src="https://github.com/user-attachments/assets/4ad69766-5a79-4967-be36-0303287f0627" />
-)
+[Tracer Details Screenshot]<img width="1898" height="875" alt="image" src="https://github.com/user-attachments/assets/4ad69766-5a79-4967-be36-0303287f0627" />
 
 ---
 
 ### 📊 Analytics  
 Visualizes **uptime graphs**, **success/failure ratio**, and **performance statistics**.
 
-![Analytics Screenshot](<img width="1903" height="882" alt="image" src="https://github.com/user-attachments/assets/b483c29e-4583-4199-9885-a70d8196b671" />
-)
+[Analytics Screenshot]<img width="1903" height="882" alt="image" src="https://github.com/user-attachments/assets/b483c29e-4583-4199-9885-a70d8196b671" />
+
 
 ---
 
 ### ⚙️ Controls  
 Toggle **API**, **Tracer**, apply **Rate Limiters**, or set **Schedule Windows** for tracing.
 
-![Controls Screenshot](<img width="1920" height="882" alt="image" src="https://github.com/user-attachments/assets/84794fc2-48b4-4b08-b07b-3fb82655ef6e" />
-)
+[Controls Screenshot]<img width="1920" height="882" alt="image" src="https://github.com/user-attachments/assets/84794fc2-48b4-4b08-b07b-3fb82655ef6e" />
+
 
 ---
 
