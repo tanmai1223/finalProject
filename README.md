@@ -21,9 +21,7 @@ The **API Tracer Management System** allows teams to:
 ### 🏠 Dashboard  
 Shows all APIs with **green (success)** and **red (failure)** indicators, and monthly activity.
 
-![Dashboard Screenshot](<img width="1898" height="878" alt="image" src="https://github.com/user-attachments/assets/b3f91c55-0e75-4492-9848-e0dc8c18dbfa" />
-)
-
+![Dashboard Screenshot]<img width="1898" height="878" alt="image" src="https://github.com/user-attachments/assets/b3f91c55-0e75-4492-9848-e0dc8c18dbfa" />
 ---
 
 ### 📋 Tracer Details  
